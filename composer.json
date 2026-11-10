@@ -1,0 +1,17 @@
+{
+    "name": "eng-vitor/bamboozerhrm",
+    "description": "a simple hrm to time tracking",
+    "autoload": {
+        "psr-4": {
+            "EngVitor\\Bamboozerhrm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vitor Gabriel",
+            "email": "vitorgmendes99@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
