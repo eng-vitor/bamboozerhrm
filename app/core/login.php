@@ -4,8 +4,8 @@ require __DIR__.'\..\..\env.php';
 include __DIR__.'\server_status.php';
 
 if(isset($_SESSION['DataAccount']['id'])){
-    $_SESSION['Msg'] = '<div class="alert alert-warning" role="alert"><i class="fa-solid fa-triangle-exclamation fa-beat"></i> Você já está logado!</div>';
-    header("Location: ..\pages\system.php");
+    $_SESSION['Msg'] = '<div class="alert-simple alert-info" role="alert"><i class="fa-solid fa-triangle-exclamation fa-beat"></i> Você já está logado!</div>';
+    header('Location: ..\pages\system.php');
     exit();
 }
 
@@ -28,21 +28,21 @@ if($QueryEmailExistsResult){
 		mysqli_query($CONNECTION_DB, $QueryUpdateLastView);
 		/* AccountUpdate */
 	    if($_SESSION['DataAccount']['roleid']==0){		
-				header("Location: ..\..\app\pages\dashboard.php");
+				header('Location: ..\..\app\pages\dashboard.php');
 				exit();
 			}else{
-				header("Location: ..\..\app\pages\system.php");
+				header('Location: ..\..\app\pages\system.php');
 				exit();
 			}
 	}else{
-		$_SESSION['Msg'] = '<div class="alert alert-danger" role="alert" style="width: 100%"><i class="fa-solid fa-xmark fa-beat"></i> A senha informada está incorreta!</div>';
-		header("Location: ..\..\index.php");
+		$_SESSION['Msg'] = '<div class="alert-simple alert-danger" role="alert" style="width: 100%"><i class="fa-solid fa-xmark fa-beat"></i> A senha informada está incorreta!</div>';
+		header('Location: ..\..\index.php');
 		exit();
 	}
 }
 else{
-	$_SESSION['Msg'] = '<div class="alert alert-warning" role="alert" style="width: 100%"><i class="fa-solid fa-exclamation fa-beat"></i> O email informado não está no banco de dados do servidor!</div>';
-	header("Location: ..\..\index.php");
+	$_SESSION['Msg'] = '<div class="alert-simple alert-warning" role="alert" style="width: 100%"><i class="fa-solid fa-exclamation fa-beat"></i> O email informado não está no banco de dados do servidor!</div>';
+	header('Location: ..\..\index.php');
 	exit();
 }
 

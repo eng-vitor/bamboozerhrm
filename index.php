@@ -3,7 +3,7 @@ session_start();
 require __DIR__.'\env.php';
 include __DIR__.'\app\core\server_status.php';
 if(isset($_SESSION['DataAccount']['id'])){
-    header("Location: ../app/pages/system.php");
+    header('Location: ../app/pages/system.php');
     exit();
 }
 ?>
@@ -37,8 +37,8 @@ if(isset($_SESSION['DataAccount']['id'])){
                     <p class="mu">Use seu e-mail corporativo.</p>
                 </div>
                 <form action="app/core/login.php" method="POST">
-                <label>E-mail<input type="email" name="loginuser" placeholder="nome@empresa.com" required/></label>
-                <label>Senha<input type="password" name="loginpass" placeholder="••••••••" required /></label>
+                <label>E-mail<input type="email" name="loginuser" placeholder="nome@empresa.com" maxlength="100" required/></label>
+                <label>Senha<input type="password" name="loginpass" placeholder="••••••••" minlength="8" maxlength="100" required /></label>
                 <div class="sp">
                     <a href="./app/pages/forgot_password.php" style="color: var(--pr)">Esqueci a senha</a>
                 </div>
