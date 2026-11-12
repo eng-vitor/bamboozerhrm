@@ -13,5 +13,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "fortawesome/font-awesome": "7.x-dev"
+    }
 }
