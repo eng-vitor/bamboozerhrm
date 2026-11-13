@@ -32,7 +32,7 @@ if($QueryEmailExistsResult){
 
 				if($UpdatePasswordExec){
 					$_SESSION['Msg'] = '<div class="alert-simple alert-success" role="alert" style="width: 100%"><i class="fa-solid fa-circle-check fa-beat"></i> Senha redefinida com sucesso!</div>';
-					header('Location: ..\pages\forgot_password.php');
+					header('Location: ..\..\index.php');
 					exit();
 				}
 				else{

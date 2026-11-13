@@ -17,7 +17,7 @@
             <p class="mu">O servidor não achou a página ou está fora do ar!</p>
         </div>
         <div class="row" style="justify-content: center">
-            <a class="btn p" href="../../index.php">Voltar ao login</a><a class="btn" href="../pages/dashboard_admin.php">Ir ao painel</a>
+            <a class="btn p" href="../../index.php">Voltar ao login</a><a class="btn" href="./system.php">Ir ao painel</a>
         </div>
     </main>
 </html>

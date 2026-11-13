@@ -83,14 +83,6 @@ nav a {
     color: var(--mu);
     transition: 0.2s;
 }
-nav a:before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: currentColor;
-    opacity: 0.5;
-}
 nav a:hover {
     background: #f4f4f5;
     color: var(--fg);
@@ -118,9 +110,9 @@ nav a.on {
     font-weight: 600;
 }
 .av {
-    width: 32px;
+    width: 30%;
     height: 32px;
-    border-radius: 50%;
+    border-radius: 1rem;
     background: var(--ps);
     color: var(--pr);
     display: grid;
@@ -210,6 +202,11 @@ main {
 }
 .w100 {
     width: 100%;
+}
+.pane label{
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 label {
     display: grid;

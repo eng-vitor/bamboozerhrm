@@ -37,15 +37,15 @@ if(isset($_SESSION['DataAccount']['id'])){
                     <p class="mu">Use seu e-mail corporativo.</p>
                 </div>
                 <form action="app/core/login.php" method="POST">
-                <label>E-mail<input type="email" name="loginuser" placeholder="nome@empresa.com" maxlength="100" required/></label>
-                <label>Senha<input type="password" name="loginpass" placeholder="••••••••" minlength="8" maxlength="100" required /></label>
+                <label><i class="fa-regular fa-envelope"></i> E-mail</label><input type="email" name="loginuser" placeholder="nome@empresa.com" maxlength="100" required/>
+                <label><i class="fa-solid fa-key"></i> Senha</label><input type="password" name="loginpass" placeholder="••••••••" minlength="8" maxlength="100" required />
                 <div class="sp">
                     <a href="./app/pages/forgot_password.php" style="color: var(--pr)">Esqueci a senha</a>
                 </div>
-                <button class="btn p w100" style="margin-top: 10px;" type="submit">Entrar</button>
+                <button class="btn p w100" style="margin-top: 10px;" type="submit"><i class="fa-solid fa-location-arrow"></i> Entrar</button>
                 </form>
                 <p style="text-align: center; margin-top:10px; color: #95a5a6;">
-                    <?=$SERVER_NAME.' '.$SYSTEM_VERSION; ?> - <?=date('Y'); ?>
+                 <i class="fa-solid fa-server"></i> <?=' '.$SERVER_NAME.' '.$SYSTEM_VERSION; ?> - <?=date('Y'); ?>
                 </p>
             </div>
         </section>

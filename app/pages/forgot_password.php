@@ -27,18 +27,18 @@ session_start();
                 ?>
             </div>
                 <div>
-                    <h2>Redefinir senha</h2>
+                    <h2><i class="fa-solid fa-unlock"></i> Redefinir senha</h2>
                     <p class="mu">Confirme seus dados para redefinir a senha.</p>
                 </div>
                 <form action="../core/change_password.php" method="POST">
-                <label>E-mail<input type="email" name="emailresetpass" placeholder="nome@empresa.com" maxlength="100" required/></label>
-                <label>Matrícula<input type="integer" name="regnumberresetpass" placeholder="12345678" minlength="3" maxlength="50" required /></label>
-                <label>Documento (CPF ou RG)<input type="integer" name="idcardresetpass" placeholder="12345678900" minlength="7" maxlength="50" required /></label>
-                <label>Nova Senha<input type="password" name="newpasswordresetpass" placeholder="••••••••" minlength="8" maxlength="100" required /></label>
+                <label><i class="fa-regular fa-envelope"></i> E-mail</label><input type="email" name="emailresetpass" placeholder="nome@empresa.com" maxlength="100" required/>
+                <label><i class="fa-solid fa-id-badge"></i> Matrícula</label><input type="integer" name="regnumberresetpass" placeholder="12345678" minlength="3" maxlength="50" required />
+                <label><i class="fa-solid fa-address-card"></i> Documento (CPF ou RG)</label><input type="integer" name="idcardresetpass" placeholder="12345678900" minlength="7" maxlength="50" required />
+                <label><i class="fa-solid fa-key"></i> Nova Senha</label><input type="password" name="newpasswordresetpass" placeholder="••••••••" minlength="8" maxlength="100" required />
                 <div class="alert-simple alert-info" style="margin-top: 10px; margin-bottom: 10px;">
                     <strong>Informativo:</strong> A senha deve conter no mínimo 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.
                 </div>
-                <button class="btn p w100" type="submit">Trocar senha</button>
+                <button class="btn p w100" type="submit"><i class="fa-solid fa-arrow-right-arrow-left"></i> Trocar senha</button>
                 </form>
                 <a class="btn w100" href="../../index.php">Voltar ao login</a>
             </div>
